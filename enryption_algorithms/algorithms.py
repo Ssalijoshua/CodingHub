@@ -16,14 +16,16 @@ k = input("To how many characters do you want to shift the characters: ")
 ascii_message = [ord(x) for x in split_message]
 print(ascii_message)
 
-cypher = []
+ascii_cypher = []
 
 for x in ascii_message:
     y = x + int(k)
-    cypher.append(y)
+    ascii_cypher.append(y)
 
-print(cypher)
+cypher = [chr(x) for x in ascii_cypher]
 
+cypher_text = ''.join(cypher)
+print(cypher_text)
 
 
 # Decrypt
