@@ -1,7 +1,6 @@
 # User should be prompted for input
 message = input("Please enter your message:\n")
 
-
 print("1. Caesar cipher\n")
 print("2. Reverse cipher\n")
 print("3. Vernam cipher\n")
@@ -16,8 +15,13 @@ print(split_message)
 k = input("To how many characters do you want to shift the characters: ")
 
 ascii_message = [ord(x) for x in split_message]
+cypher = []
 
+for x in ascii_message:
+    y = x + k
+    cypher.append(x)
 
+print(cypher)
 
 
 
