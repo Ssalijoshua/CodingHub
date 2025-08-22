@@ -13,7 +13,11 @@ encryption_algorithm = input("Enter the number of the encryption algorithm you w
 split_message = list(message)
 print(split_message)
 
-k = input("To how many characters do you want to shift the Caesar Cipher: ")
+k = input("To how many characters do you want to shift the characters: ")
+
+ascii_message = [ord(x) for x in split_message]
+
+
 
 
 
