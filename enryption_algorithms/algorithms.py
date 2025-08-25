@@ -41,7 +41,7 @@ message = []
 
 for a in cypher_list:
     y = a - int(k)
-    message.append(y)
+    message.append(chr(str(y)))
 
 ''.join(message)
 
