@@ -30,3 +30,7 @@ print(cypher_text)
 
 # Decrypt
 
+cypher = input("Enter the cyphertext to decrypt: ")
+
+
+
