@@ -32,5 +32,7 @@ print(cypher_text)
 
 cypher = input("Enter the cyphertext to decrypt: ")
 
+cypher_list = list(cypher)
+
 
 
