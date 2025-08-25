@@ -31,8 +31,15 @@ print(cypher_text)
 # Decrypt
 
 cypher = input("Enter the cyphertext to decrypt: ")
+x = input("Enter the short value that was used to shift the cypher")
 
 cypher_list = list(cypher)
+
+cypher_list = [chr(a) for a in cypher_list]
+
+
+
+
 
 
 
