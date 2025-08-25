@@ -35,9 +35,17 @@ x = input("Enter the short value that was used to shift the cypher")
 
 cypher_list = list(cypher)
 
-cypher_list = [chr(a) for a in cypher_list]
+cypher_list = [ord(a) for a in cypher_list]
 
+message = []
 
+for a in cypher_list:
+    y = a - int(k)
+    message.append(y)
+
+''.join(message)
+
+print(message)
 
 
 
